@@ -26,7 +26,7 @@ while cap.isOpened():
     if not ret:
         break
 
-    # Perform detection
+    # Perform detection using the main program jo maine bheja tumhe
     results = model(frame)
     detections = results.xyxy[0].cpu().numpy()
 
@@ -67,5 +67,6 @@ while cap.isOpened():
 cap.release()
 out.release()
 cv2.destroyAllWindows()
+
 
 
