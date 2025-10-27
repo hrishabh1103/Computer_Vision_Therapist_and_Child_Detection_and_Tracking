@@ -7,7 +7,7 @@ from sort import Sort
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
 tracker = Sort()
 
-# Input and Output paths
+# Input and Output paths 3rd update mn change karo isse
 video_path = r"C:\Users\hrish\Downloads\Input_Daniel.mp4"
 output_path = r"C:\Users\hrish\Downloads\output_Daniel.mp4"
 
@@ -67,3 +67,4 @@ while cap.isOpened():
 cap.release()
 out.release()
 cv2.destroyAllWindows()
+
