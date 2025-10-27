@@ -46,7 +46,7 @@ while cap.isOpened():
 
     detections_for_tracking = np.array(detections_for_tracking)
 
-    # Perform tracking
+    # Perform tracking on the main coast
     tracked_objects = tracker.update(detections_for_tracking)
 
     # Draw results
@@ -67,6 +67,7 @@ while cap.isOpened():
 cap.release()
 out.release()
 cv2.destroyAllWindows()
+
 
 
 
