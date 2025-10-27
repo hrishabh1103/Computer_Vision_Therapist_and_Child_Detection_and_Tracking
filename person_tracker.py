@@ -14,7 +14,7 @@ output_path = r"C:\Users\hrish\Downloads\output_Daniel.mp4"
 # Open video
 cap = cv2.VideoCapture(video_path)
 
-# Video writer setup
+# Video writer setup in the main setup ko bhi mainly change kardo
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -67,4 +67,5 @@ while cap.isOpened():
 cap.release()
 out.release()
 cv2.destroyAllWindows()
+
 
